@@ -12,5 +12,11 @@ export interface Todo {
   /** active : booléen gérant le statut */
   active: boolean;
   /** category : catégorie format texte */
-  category: string;
+  todoCategory: TodoCategory;
+}
+export interface TodoCategory {
+  /** id: identifiant unique */
+  id?: number;
+  /** title: titre du Todo */
+ name: string;
 }

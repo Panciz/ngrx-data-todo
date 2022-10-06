@@ -6,5 +6,5 @@ export const todoSelectors = new EntitySelectorsFactory().create<Todo>('Todo');
 
 export const selectTodoByCategory = (category: string) => createSelector(
   todoSelectors.selectEntities,
-  (data) => data.filter(c => c.category === category)
+  (data) => data.filter(c => c.todoCategory.name === category)
 );
